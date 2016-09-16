@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Summer vibes</title>
+    </head>
+    <body>
+ 
+                    <p id='1'>
+                        <img src="images/ananas.jpg"/>
+                    </p>
+
+                    <p  id='2'><img src="images/pastèque.jpg"/></p>
+ 
+                    <p id='3'><img src="images/tomates_grappe.jpg"/></p>
+
+                <div>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </div>
+        <style>
+            p{
+                display: none;
+            }
+        </style>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript">
+            $('li').on('click', function() {
+                $('p').hide();
+                $('p#' + $(this).html()).show();
+            })
+        </script>
+    </body>
+</html>
